@@ -25,15 +25,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
-    :root{ --ink:#0E1116; --ink2:#07090C; --gold:#E8BE4E; --snow:#F5F6F7; --mut:#8A8F98; }
+    :root{ --ink:#0E1116; --ink2:#07090C; --gold:#E8BE4E; --snow:#F5F6F7; --mut:#A0A6AF; }
     *{ box-sizing:border-box; margin:0; padding:0; }
     html,body{ height:100%; }
     body{
-      background:radial-gradient(125% 85% at 72% 8%, #171c25 0%, var(--ink) 46%, var(--ink2) 100%);
+      background:
+        radial-gradient(115% 95% at 50% 44%, rgba(8,10,14,.93) 0%, rgba(8,10,14,.76) 46%, rgba(8,10,14,.52) 100%),
+        url("bg.png") center center / cover no-repeat,
+        var(--ink);
+      background-attachment: fixed, fixed, fixed;
       color:var(--snow);
       font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
       min-height:100%; display:grid; place-items:center; padding:32px; text-align:center;
       -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      text-shadow:0 1px 3px rgba(0,0,0,.55);
     }
     main{ max-width:640px; display:flex; flex-direction:column; align-items:center; gap:22px; }
     .mark{ width:80px; height:auto; }
