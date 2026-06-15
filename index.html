@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mandafi — Financial agency for AI agents</title>
+  <meta name="description" content="Mandafi is the authority & accountability layer for AI agents. Give your agents a mandate, not your card.">
+  <meta name="theme-color" content="#0E1116">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mandafi.com">
+  <meta property="og:title" content="Mandafi">
+  <meta property="og:description" content="The authority & accountability layer for AI agents.">
+  <meta property="og:image" content="https://mandafi.com/icon-512.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{ --ink:#0E1116; --ink2:#07090C; --gold:#E8BE4E; --snow:#F5F6F7; --mut:#8A8F98; }
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html,body{ height:100%; }
+    body{
+      background:radial-gradient(125% 85% at 72% 8%, #171c25 0%, var(--ink) 46%, var(--ink2) 100%);
+      color:var(--snow);
+      font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      min-height:100%; display:grid; place-items:center; padding:32px; text-align:center;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    main{ max-width:640px; display:flex; flex-direction:column; align-items:center; gap:22px; }
+    .mark{ width:80px; height:auto; }
+    h1{ font-weight:800; font-size:clamp(40px,9vw,72px); letter-spacing:-0.025em; line-height:1; }
+    h1 .fi{ color:var(--gold); }
+    .rule{ width:40px; height:3px; background:var(--gold); opacity:.8; border-radius:2px; }
+    .tag{ font-weight:600; font-size:clamp(18px,3.6vw,25px); }
+    .sub{ font-weight:400; font-size:clamp(15px,2.6vw,18px); color:var(--mut); max-width:40ch; line-height:1.55; }
+    .meta{ margin-top:8px; font-size:14px; color:var(--mut); letter-spacing:.02em; }
+    .meta a{ color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(232,190,78,.35); }
+    .meta a:hover{ border-bottom-color:var(--gold); }
+    footer{ position:fixed; bottom:18px; left:0; right:0; text-align:center; font-size:12px; color:#565c66; }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Mandafi mark: squared M hiding "F" + "i" (gold), built from right angles only -->
+    <svg class="mark" viewBox="0 0 55 52" role="img" aria-label="Mandafi logo">
+      <rect x="22" y="0"  width="11" height="52" fill="#F5F6F7"/>
+      <rect x="44" y="0"  width="11" height="52" fill="#F5F6F7"/>
+      <rect x="33" y="0"  width="22" height="11" fill="#F5F6F7"/>
+      <rect x="0"  y="0"  width="11" height="52" fill="#E8BE4E"/>
+      <rect x="0"  y="0"  width="33" height="11" fill="#E8BE4E"/>
+      <rect x="22" y="22" width="11" height="11" fill="#E8BE4E"/>
+      <rect x="44" y="0"  width="11" height="11" fill="#E8BE4E"/>
+      <rect x="44" y="22" width="11" height="30" fill="#E8BE4E"/>
+    </svg>
+
+    <h1>Manda<span class="fi">fi</span></h1>
+    <div class="rule"></div>
+    <p class="tag">Give your agents a mandate, not your card.</p>
+    <p class="sub">The authority &amp; accountability layer for AI agents — financial agency your agents can be trusted with.</p>
+    <p class="meta">Launching soon · <a href="mailto:hello@mandafi.com">hello@mandafi.com</a></p>
+  </main>
+  <footer>© 2026 Mandafi</footer>
+</body>
+</html>
